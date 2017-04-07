@@ -11,6 +11,7 @@ brew install git
 brew install nvm
 brew install npm
 brew install mysql
+brew install yarn
 
 
 # react native
