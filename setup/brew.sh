@@ -12,7 +12,7 @@ brew install nvm
 brew install npm
 brew install mysql
 brew install yarn
-
+brew install carthage
 
 # react native
 brew install node
