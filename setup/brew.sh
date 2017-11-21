@@ -1,22 +1,42 @@
 #! /bin/sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# upgrade
+# Make sure Brew has permissions
+brew doctor
+
+# Upgrade Brew
 brew update
 brew upgrade
 
-# installs
-brew install fish
+
+# Install Brew Cask, for terminal app installs
+brew tap caskroom/cask
+
+
+# Git
 brew install git
+
+## Node.js & npm
+## nvm
+brew install node
 brew install nvm
 brew install npm
-brew install mysql
+
+## Yarn
 brew install yarn
+
+## Other Installs
+brew install mysql
 brew install carthage
 
-# react native
-brew install node
+
+## Install Watchman
 brew install watchman
+
+
+## Atom
+# Install Atom using Brew & Cask
+brew cask install atom
 
 
 # Remove outdated versions
